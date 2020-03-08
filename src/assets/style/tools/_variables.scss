@@ -1,0 +1,49 @@
+// Typography
+$fontFamily: 'Livvic',
+sans-serif;
+
+@mixin h1Large {
+  font-weight: 700;
+  font-size: 6.25rem;
+  line-height: 6.25rem;
+}
+
+@mixin h1Medium {
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 3.5rem;
+}
+
+@mixin h1Small {
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+}
+
+@mixin h2Large {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+@mixin h2Small {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+@mixin h3 {
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+// Colors
+$midnightGreen: #014e56;
+$lightCoral: #f67e7e;
+$white: #fff;
+$raptureBlue: #79c8c7;
+$policeBlue: #2c6269;
+$deepJungleGreen: #004047;
+$sacramentoStateGreen: #012f34;
+$darkGreen: #002529;
