@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 
 import { ReactComponent as Logo } from '../../img/logo.svg';
 
-import HamburgerMenu from '../components/HamburgerMenu.js';
-import NavMobile from '../components/NavMobile.js';
+import HamburgerMenu from '../components/HamburgerMenu';
+import NavMobile from '../components/NavMobile';
 
 const Navbar = () => {
   return (
