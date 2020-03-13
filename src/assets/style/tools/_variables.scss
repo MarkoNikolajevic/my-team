@@ -38,6 +38,11 @@ sans-serif;
   line-height: 1.75rem;
 }
 
+@mixin smallTest {
+  font-size: 0.8125rem;
+  line-height: 1.125rem;
+}
+
 // Colors
 $midnightGreen: #014e56;
 $lightCoral: #f67e7e;

@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+
+import HomeHeader from '../components/HomeHeader';
+import Services from '../components/Services';
+import Testimonials from '../components/Testimonials';
 
 const Home = () => {
   return (
-    <div>
-      <h1>Home</h1>
-    </div>
+    <Fragment>
+      <HomeHeader />
+      <Services />
+      <Testimonials />
+    </Fragment>
   );
 };
 

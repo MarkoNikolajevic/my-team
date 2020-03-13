@@ -43,7 +43,7 @@ export default () => {
   };
   return (
     <section>
-      <h1 className='section-title'>
+      <h1 className='header-title'>
         Contact <br />
         <span className='subtitle'>Ask us about</span>
       </h1>
@@ -120,6 +120,7 @@ export default () => {
             )}
           </Form>
         )}
+        <BgBottom />
       </Formik>
     </section>
   );
