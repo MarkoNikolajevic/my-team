@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState } from 'react';
 
 import { Link } from 'react-router-dom';
 
@@ -8,13 +8,14 @@ import HamburgerMenu from '../components/HamburgerMenu';
 import NavMobile from '../components/NavMobile';
 
 const Navbar = () => {
+  const [open, setOpen] = useState(false);
   return (
     <Fragment>
       <nav className='navbar'>
         <div className='brand-logo'>
           <Logo />
         </div>
-        <HamburgerMenu />
+        <HamburgerMenu open={open} setOpen={setOpen} />
         <ul className='navbar-nav-large'>
           <li className='nav-item'>
             <Link to='/' className='nav-link'>
@@ -33,7 +34,7 @@ const Navbar = () => {
           </li>
         </ul>
       </nav>
-      <NavMobile />
+      <NavMobile open={open} setOpen={setOpen} />
     </Fragment>
   );
 };
