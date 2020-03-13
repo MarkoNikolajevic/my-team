@@ -6,16 +6,22 @@ import { ReactComponent as BgPattern } from '../../img/bg-pattern-about-1-mobile
 
 const NavMobile = () => {
   return (
-    <nav>
-      <ul>
+    <nav className='navbar-nav-mobile'>
+      <ul className='menu-mobile'>
         <li>
-          <Link to='/'>home</Link>
+          <Link className='nav-mobile-link' to='/'>
+            home
+          </Link>
         </li>
         <li>
-          <Link to='/about'>about</Link>
+          <Link className='nav-mobile-link' to='/about'>
+            about
+          </Link>
         </li>
         <li>
-          <Link to='/contact'>contact us</Link>
+          <Link className='nav-mobile-link' id='last' to='/contact'>
+            contact us
+          </Link>
         </li>
         <BgPattern />
       </ul>

@@ -10,7 +10,7 @@ import NavMobile from '../components/NavMobile';
 const Navbar = () => {
   return (
     <Fragment>
-      <nav className='navbar' style={{ background: 'green' }}>
+      <nav className='navbar'>
         <div className='brand-logo'>
           <Logo />
         </div>

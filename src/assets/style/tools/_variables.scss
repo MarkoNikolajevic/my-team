@@ -43,6 +43,10 @@ sans-serif;
   line-height: 1.125rem;
 }
 
+@mixin transition {
+  transition: all 500ms ease-in-out;
+}
+
 // Colors
 $midnightGreen: #014e56;
 $lightCoral: #f67e7e;
@@ -52,3 +56,6 @@ $policeBlue: #2c6269;
 $deepJungleGreen: #004047;
 $sacramentoStateGreen: #012f34;
 $darkGreen: #002529;
+
+// Layout
+$paddingMobile: 3rem 1.5rem;
