@@ -120,8 +120,8 @@ export default () => {
             )}
           </Form>
         )}
-        <BgBottom />
       </Formik>
+      <BgBottom />
     </section>
   );
 };

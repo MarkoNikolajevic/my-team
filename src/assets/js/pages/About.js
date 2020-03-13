@@ -1,10 +1,18 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+
+import AboutHeader from '../components/AboutHeader';
+import Directors from '../components/Directors';
+import Clients from '../components/Clients';
+import ContactSection from '../components/ContactSection';
 
 const About = () => {
   return (
-    <div>
-      <h1>About</h1>
-    </div>
+    <Fragment>
+      <AboutHeader />
+      <Directors />
+      <Clients />
+      <ContactSection />
+    </Fragment>
   );
 };
 
