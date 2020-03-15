@@ -8,6 +8,7 @@
   padding: $paddingMobile;
   position: relative;
   height: 400px;
+  overflow: hidden;
 
   .header-title {
     @include h1Small;
@@ -24,5 +25,11 @@
   .bg-pattern {
     position: absolute;
     bottom: 0;
+  }
+
+  .bg-pattern-about {
+    position: absolute;
+    bottom: 0;
+    transform: translate(100%, 50%);
   }
 }

@@ -12,7 +12,7 @@ const AboutHeader = () => {
         deliver incredible outcomes. Talented, diverse teams shape the best
         products and experiences. We’ll bring those teams to you.
       </p>
-      <BgPattern />
+      <BgPattern className='bg-pattern-about' />
     </header>
   );
 };
