@@ -2,3 +2,8 @@
 @import './tools/_variables';
 @import './partials/_navbar';
 @import './partials/_header';
+
+html,
+body {
+  font-family: $fontFamily;
+}

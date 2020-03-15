@@ -38,6 +38,18 @@ sans-serif;
   line-height: 1.75rem;
 }
 
+@mixin p1 {
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+@mixin p2 {
+  font-weight: 600;
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+}
+
 @mixin smallTest {
   font-size: 0.8125rem;
   line-height: 1.125rem;

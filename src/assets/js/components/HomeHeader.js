@@ -14,7 +14,7 @@ const HomeHeader = () => {
         Most companies aren’t tapping into the abundance of global talent. We’re
         about to change that.
       </p>
-      <BgPattern />
+      <BgPattern className='bg-pattern' />
     </header>
   );
 };
