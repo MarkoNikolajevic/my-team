@@ -1,0 +1,28 @@
+.main-header {
+  background: $midnightGreen;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: $white;
+  padding: $paddingMobile;
+  position: relative;
+  height: 400px;
+
+  .header-title {
+    @include h1Small;
+
+    span {
+      color: $lightCoral;
+    }
+  }
+
+  .intro {
+    @include p2;
+  }
+
+  .bg-pattern {
+    position: absolute;
+    bottom: 0;
+  }
+}
