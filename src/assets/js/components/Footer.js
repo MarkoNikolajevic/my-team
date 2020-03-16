@@ -8,8 +8,12 @@ const Footer = () => {
     <footer className='footer'>
       <Logo />
       <div className='page-links'>
-        <Link to='/'>home</Link>
-        <Link to='/about'>about</Link>
+        <Link className='link' to='/'>
+          home
+        </Link>
+        <Link className='link' to='/about'>
+          about
+        </Link>
       </div>
       <p className='contact-info'>
         987 Hillcrest Lane
@@ -21,14 +25,14 @@ const Footer = () => {
         Call Us: 949-833-7432
       </p>
       <div className='social-links'>
-        <a className='footer-link' href='www.facebook.com'>
-          facebook
+        <a className='footer-link' href='www.facebook.com' target='_blank'>
+          <i class='fab fa-facebook-square'></i>
         </a>
-        <a className='footer-link' href='www.pinterest.com'>
-          pinterest
+        <a className='footer-link' href='www.pinterest.com' target='_blank'>
+          <i class='fab fa-pinterest'></i>
         </a>
-        <a className='footer-link' href='www.twitter.com'>
-          twitter
+        <a className='footer-link' href='www.twitter.com' target='_blank'>
+          <i class='fab fa-twitter'></i>
         </a>
       </div>
       <p className='copyright'>Copyright 2020. All Rights Reserved</p>

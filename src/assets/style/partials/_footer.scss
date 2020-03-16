@@ -1,0 +1,49 @@
+.footer {
+  background: $darkGreen;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: $paddingMobile;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.4);
+
+  .page-links {
+    margin-top: 2rem;
+
+    .link {
+      text-decoration: none;
+      @include p2;
+      color: $white;
+      cursor: pointer;
+      padding: 0 1rem;
+      @include transition;
+
+      &:hover {
+        color: $lightCoral;
+      }
+    }
+  }
+
+  .contact-info,
+  .copyright {
+    @include p2;
+  }
+
+  .social-links {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .footer-link {
+      padding: 0 10px;
+      font-size: 27px;
+      color: $white;
+      @include transition;
+
+      &:hover {
+        color: $lightCoral;
+      }
+    }
+  }
+}
