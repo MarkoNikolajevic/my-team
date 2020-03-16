@@ -38,7 +38,7 @@ const Services = () => {
           </p>
         </div>
       </div>
-      <BgPattern />
+      <BgPattern className='bg-pattern' />
     </section>
   );
 };

@@ -1,0 +1,49 @@
+#services {
+  padding: 4rem 1.5rem 3rem 1.5rem;
+  background: $sacramentoStateGreen;
+  color: $white;
+  position: relative;
+  overflow: hidden;
+
+  .divider {
+    width: 50px;
+    height: 4px;
+    background: $lightCoral;
+  }
+
+  .section-title {
+    @include h2Small;
+    width: 70%;
+  }
+
+  .services-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 3.5rem;
+
+    .service-card {
+      margin-bottom: 3rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .service-title {
+        @include h3;
+        color: $lightCoral;
+      }
+
+      .service-info {
+        @include p2;
+      }
+    }
+  }
+
+  .bg-pattern {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(50%);
+  }
+}
