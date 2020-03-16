@@ -58,6 +58,7 @@
       &:focus {
         color: $white;
         border-color: $raptureBlue;
+        outline: none;
       }
 
       &:invalid {
@@ -77,16 +78,19 @@
       align-self: flex-start;
       margin-top: 2rem;
       transform: translateX(-1rem);
+      background: $white;
       @include transition;
       width: 123px;
       height: 3rem;
       border-radius: 50px;
+      border: none;
       @include p1;
       color: $deepJungleGreen;
       cursor: pointer;
 
       &:hover {
-        background: $raptureBlue;
+        background: $sacramentoStateGreen;
+        color: $white;
       }
     }
   }
