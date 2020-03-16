@@ -42,22 +42,24 @@ export default () => {
       });
   };
   return (
-    <section>
-      <h1 className='header-title'>
+    <section id='contact-form'>
+      <h1 className='page-title'>
         Contact <br />
-        <span className='subtitle'>Ask us about</span>
+        <span>Ask us about</span>
       </h1>
-      <div>
-        <IconPerson />
-        <p>The quality of our talent network</p>
-      </div>
-      <div>
-        <IconCog />
-        <p>Usage & implementation of our software</p>
-      </div>
-      <div>
-        <IconChart />
-        <p>How we help drive innovation</p>
+      <div className='contact-desc'>
+        <div className='contact-info'>
+          <IconPerson className='contact-icon' />
+          <p>The quality of our talent network</p>
+        </div>
+        <div className='contact-info'>
+          <IconCog className='contact-icon' />
+          <p>Usage & implementation of our software</p>
+        </div>
+        <div className='contact-info'>
+          <IconChart className='contact-icon' />
+          <p>How we help drive innovation</p>
+        </div>
       </div>
       <Formik
         initialValues={{
@@ -97,7 +99,7 @@ export default () => {
             <Field
               id='message'
               name='message'
-              rows='5'
+              rows='3'
               placeholder='Message'
               component='textarea'
             />
@@ -121,7 +123,7 @@ export default () => {
           </Form>
         )}
       </Formik>
-      <BgBottom />
+      <BgBottom className='bg-pattern' />
     </section>
   );
 };

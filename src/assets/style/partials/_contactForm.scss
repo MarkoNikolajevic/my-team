@@ -1,0 +1,100 @@
+#contact-form {
+  padding: $paddingMobile;
+  display: flex;
+  flex-direction: column;
+  background: $midnightGreen;
+  text-align: center;
+  color: $white;
+  position: relative;
+  overflow: hidden;
+
+  .page-title {
+    @include h1Small;
+
+    span {
+      color: $lightCoral;
+      @include h2Small;
+    }
+  }
+
+  .contact-desc {
+    padding: 3rem 0 1rem 0;
+
+    .contact-info {
+      text-align: left;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem;
+
+      .contact-icon {
+        flex: 1 1 20%;
+      }
+
+      p {
+        @include p1;
+        flex: 1 1 66%;
+      }
+    }
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+
+    input,
+    textarea {
+      width: 100%;
+      margin-bottom: 1rem;
+      padding: 1rem 0.875rem;
+      background: transparent;
+      border: none;
+      color: rgba(255, 255, 255, 0.7);
+      border-bottom: 1px solid $white;
+      @include transition;
+
+      &:focus {
+        color: $white;
+        border-color: $raptureBlue;
+      }
+
+      &:invalid {
+        color: rgba($color: $lightCoral, $alpha: 0.7);
+        border-color: $lightCoral;
+      }
+    }
+
+    .errorMsg {
+      color: $lightCoral;
+      align-self: flex-start;
+      font-size: 10px;
+      font-weight: 700;
+    }
+
+    .submit-btn {
+      align-self: flex-start;
+      margin-top: 2rem;
+      transform: translateX(-1rem);
+      @include transition;
+      width: 123px;
+      height: 3rem;
+      border-radius: 50px;
+      @include p1;
+      color: $deepJungleGreen;
+      cursor: pointer;
+
+      &:hover {
+        background: $raptureBlue;
+      }
+    }
+  }
+
+  .bg-pattern {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(50%, 50%);
+  }
+}
