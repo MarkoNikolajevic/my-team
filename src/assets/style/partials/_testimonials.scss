@@ -1,0 +1,67 @@
+#testimonials {
+  background: $deepJungleGreen;
+  padding: $paddingMobile;
+  color: $white;
+  text-align: center;
+  position: relative;
+
+  .section-title {
+    @include h2Small;
+    margin-top: 6rem;
+
+    span {
+      color: $raptureBlue;
+    }
+  }
+
+  .testimonials-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+
+    .testimonial {
+      margin-bottom: 3rem;
+
+      &:last-child {
+        margin-bottom: 6rem;
+      }
+
+      .testimonial-quote {
+        @include p2;
+        margin: 0 auto;
+        transform: translateY(-25%);
+      }
+
+      .testimonial-name {
+        @include h3;
+        color: $raptureBlue;
+        margin: 0 auto;
+      }
+
+      .testimonial-job {
+        @include smallText;
+      }
+
+      .testimonial-picture {
+        width: 62px;
+        height: 62px;
+        border-radius: 50%;
+        border: 2px solid #c4fffe;
+      }
+    }
+  }
+
+  .bg-pattern {
+    position: absolute;
+  }
+
+  .top {
+    top: 0;
+    left: 0;
+  }
+
+  .bottom {
+    bottom: 0;
+    right: 0;
+  }
+}

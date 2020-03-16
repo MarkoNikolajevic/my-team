@@ -13,7 +13,7 @@ const Testimonials = () => {
     <section id='testimonials'>
       <h2 className='section-title'>
         Delivering real results for top companies. Some of our
-        <span>success stories.</span>
+        <span> success stories.</span>
       </h2>
       <div className='testimonials-wrapper'>
         <div className='testimonial'>
@@ -24,10 +24,10 @@ const Testimonials = () => {
             platform eight months faster than planned.”
           </p>
           <h3 className='testimonial-name'>Kady Baker</h3>
-          <small className='testimonial-job'>
+          <p className='testimonial-job'>
             <em>Product Manager at Bookmark</em>
-          </small>
-          <img src={kady} alt='Kady Baker' />
+          </p>
+          <img src={kady} alt='Kady Baker' className='testimonial-picture' />
         </div>
 
         <div className='testimonial'>
@@ -38,10 +38,14 @@ const Testimonials = () => {
             has gone through the roof!”
           </p>
           <h3 className='testimonial-name'>Aiysha Reese</h3>
-          <small className='testimonial-job'>
+          <p className='testimonial-job'>
             <em>Founder of Manage</em>
-          </small>
-          <img src={aiysha} alt='Aiysha Reese' />
+          </p>
+          <img
+            src={aiysha}
+            alt='Aiysha Reese'
+            className='testimonial-picture'
+          />
         </div>
 
         <div className='testimonial'>
@@ -52,14 +56,18 @@ const Testimonials = () => {
             with 100k downloads in the first month.”
           </p>
           <h3 className='testimonial-name'>Arthur Clarke</h3>
-          <small className='testimonial-job'>
+          <p className='testimonial-job'>
             <em>Co-founder of MyPhysio</em>
-          </small>
-          <img src={arthur} alt='Arthur Clarke' />
+          </p>
+          <img
+            src={arthur}
+            alt='Arthur Clarke'
+            className='testimonial-picture'
+          />
         </div>
       </div>
-      <BgPatternTop />
-      <BgPatternBottom />
+      <BgPatternTop className='bg-pattern top' />
+      <BgPatternBottom className='bg-pattern bottom' />
     </section>
   );
 };
