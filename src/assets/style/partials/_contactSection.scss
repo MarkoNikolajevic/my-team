@@ -1,0 +1,38 @@
+#contact-section {
+  background-color: $lightCoral;
+  color: $sacramentoStateGreen;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: $paddingMobile;
+  position: relative;
+  overflow: hidden;
+
+  .section-title {
+    @include h2Small;
+  }
+
+  .contact-btn {
+    text-decoration: none;
+    border: 2px solid $sacramentoStateGreen;
+    color: $sacramentoStateGreen;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    @include transition;
+    margin-bottom: 2rem;
+
+    &:hover {
+      color: $white;
+      background: $sacramentoStateGreen;
+    }
+  }
+
+  .bg-pattern {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(15%);
+  }
+}

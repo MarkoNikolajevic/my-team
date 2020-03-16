@@ -11,7 +11,7 @@ const ContactSection = () => {
       <Link to='/contact' className='contact-btn'>
         contact us
       </Link>
-      <BgPattern />
+      <BgPattern className='bg-pattern' />
     </section>
   );
 };
