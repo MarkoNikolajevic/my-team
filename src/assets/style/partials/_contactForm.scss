@@ -97,8 +97,47 @@
 
   .bg-pattern {
     position: absolute;
+  }
+
+  .top {
+    display: none;
+  }
+
+  .bottom {
     bottom: 0;
     right: 0;
     transform: translate(50%, 50%);
+  }
+}
+
+// tablet media queries
+@media screen and (min-width: 48rem) {
+  #contact-form {
+    padding-left: 8rem;
+    padding-right: 8rem;
+
+    .page-title {
+      @include h1Medium;
+
+      span {
+        font-size: 2rem !important;
+        line-height: 3rem;
+      }
+    }
+
+    .contact-icon {
+      flex-basis: 0 !important;
+    }
+
+    .top {
+      display: block;
+      top: 8%;
+      left: 0;
+      transform: translateX(-50%);
+    }
+
+    .bottom {
+      transform: translate(50%, 0);
+    }
   }
 }

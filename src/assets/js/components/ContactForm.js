@@ -7,6 +7,7 @@ import * as Yup from 'yup';
 import { ReactComponent as IconPerson } from '../../img/icon-person.svg';
 import { ReactComponent as IconCog } from '../../img/icon-cog.svg';
 import { ReactComponent as IconChart } from '../../img/icon-chart.svg';
+import { ReactComponent as BgTop } from '../../img/bg-pattern-about-2-contact-1.svg';
 import { ReactComponent as BgBottom } from '../../img/bg-pattern-contact-2.svg';
 
 const formSchema = Yup.object().shape({
@@ -123,7 +124,8 @@ export default () => {
           </Form>
         )}
       </Formik>
-      <BgBottom className='bg-pattern' />
+      <BgTop className='bg-pattern top' />
+      <BgBottom className='bg-pattern bottom' />
     </section>
   );
 };
