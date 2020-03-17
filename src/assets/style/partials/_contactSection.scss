@@ -37,3 +37,20 @@
     transform: translateY(15%);
   }
 }
+
+@media screen and (min-width: 48rem) {
+  #contact-section {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 4.5rem 4rem;
+
+    .section-title {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .contact-btn {
+      margin-bottom: 0;
+    }
+  }
+}
