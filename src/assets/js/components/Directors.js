@@ -24,7 +24,9 @@ const Directors = ({ flipped, setFlipped }) => {
             <small className='director-job'>
               <em>Founder & CEO</em>
             </small>
-            <Plus className='plus' />
+            <div className='icon'>
+              <Plus />
+            </div>
           </div>
           <div className='back-side'>
             <h3 className='director-name'>Nikita Marks</h3>
@@ -33,10 +35,16 @@ const Directors = ({ flipped, setFlipped }) => {
               fuga quas doloribus perferendis!
             </p>
             <div className='social-links'>
-              <IconTwitter />
-              <IconLinkedin />
+              <a className='link' href='www.twitter.com' target='_blank'>
+                <i class='fab fa-twitter'></i>
+              </a>
+              <a className='link' href='www.linkedin.com' target='_blank'>
+                <i class='fab fa-linkedin'></i>
+              </a>
             </div>
-            <Plus className='plus-back' />
+            <div className='icon'>
+              <Plus />
+            </div>
           </div>
         </div>
 
@@ -51,7 +59,9 @@ const Directors = ({ flipped, setFlipped }) => {
             <small className='director-job'>
               <em>Co-founder & COO</em>
             </small>
-            <Plus className='plus' />
+            <div className='icon'>
+              <Plus />
+            </div>
           </div>
           <div className='back-side'>
             <h3 className='director-name'>Christian Duncan</h3>
@@ -60,10 +70,16 @@ const Directors = ({ flipped, setFlipped }) => {
               fuga quas doloribus perferendis!
             </p>
             <div className='social-links'>
-              <IconTwitter />
-              <IconLinkedin />
+              <a className='link' href='www.twitter.com' target='_blank'>
+                <i class='fab fa-twitter'></i>
+              </a>
+              <a className='link' href='www.linkedin.com' target='_blank'>
+                <i class='fab fa-linkedin'></i>
+              </a>
             </div>
-            <Plus className='plus-back' />
+            <div className='icon'>
+              <Plus />
+            </div>
           </div>
         </div>
 
@@ -74,7 +90,9 @@ const Directors = ({ flipped, setFlipped }) => {
             <small className='director-job'>
               <em>Co-founder & CTO</em>
             </small>
-            <Plus className='plus' />
+            <div className='icon'>
+              <Plus />
+            </div>
           </div>
           <div className='back-side'>
             <h3 className='director-name'>Cruz Hamer</h3>
@@ -83,10 +101,16 @@ const Directors = ({ flipped, setFlipped }) => {
               fuga quas doloribus perferendis!
             </p>
             <div className='social-links'>
-              <IconTwitter />
-              <IconLinkedin />
+              <a className='link' href='www.twitter.com' target='_blank'>
+                <i class='fab fa-twitter'></i>
+              </a>
+              <a className='link' href='www.linkedin.com' target='_blank'>
+                <i class='fab fa-linkedin'></i>
+              </a>
             </div>
-            <Plus className='plus-back' />
+            <div className='icon'>
+              <Plus class='plus-back' />
+            </div>
           </div>
         </div>
 
@@ -97,7 +121,9 @@ const Directors = ({ flipped, setFlipped }) => {
             <small className='director-job'>
               <em>Business Development Lead</em>
             </small>
-            <Plus className='plus' />
+            <div className='icon'>
+              <Plus />
+            </div>
           </div>
           <div className='back-side'>
             <h3 className='director-name'>Drake Heaton</h3>
@@ -106,10 +132,16 @@ const Directors = ({ flipped, setFlipped }) => {
               fuga quas doloribus perferendis!
             </p>
             <div className='social-links'>
-              <IconTwitter />
-              <IconLinkedin />
+              <a className='link' href='www.twitter.com' target='_blank'>
+                <i class='fab fa-twitter'></i>
+              </a>
+              <a className='link' href='www.linkedin.com' target='_blank'>
+                <i class='fab fa-linkedin'></i>
+              </a>
             </div>
-            <Plus className='plus-back' />
+            <div className='icon'>
+              <Plus class='plus-back' />
+            </div>
           </div>
         </div>
 
@@ -120,7 +152,9 @@ const Directors = ({ flipped, setFlipped }) => {
             <small className='director-job'>
               <em>Lead Marketing</em>
             </small>
-            <Plus className='plus' />
+            <div className='icon'>
+              <Plus />
+            </div>
           </div>
           <div className='back-side'>
             <h3 className='director-name'>Griffin Wise</h3>
@@ -129,10 +163,16 @@ const Directors = ({ flipped, setFlipped }) => {
               to survive these days."
             </p>
             <div className='social-links'>
-              <IconTwitter />
-              <IconLinkedin />
+              <a className='link' href='www.twitter.com' target='_blank'>
+                <i class='fab fa-twitter'></i>
+              </a>
+              <a className='link' href='www.linkedin.com' target='_blank'>
+                <i class='fab fa-linkedin'></i>
+              </a>
             </div>
-            <Plus className='plus-back' />
+            <div className='icon'>
+              <Plus class='plus-back' />
+            </div>
           </div>
         </div>
 
@@ -143,7 +183,9 @@ const Directors = ({ flipped, setFlipped }) => {
             <small className='director-job'>
               <em>Head of Talent</em>
             </small>
-            <Plus className='plus' />
+            <div className='icon'>
+              <Plus />
+            </div>
           </div>
           <div className='back-side'>
             <h3 className='director-name'>Aden Allan</h3>
@@ -152,15 +194,21 @@ const Directors = ({ flipped, setFlipped }) => {
               and let them follow it."
             </p>
             <div className='social-links'>
-              <IconTwitter />
-              <IconLinkedin />
+              <a className='link' href='www.twitter.com' target='_blank'>
+                <i class='fab fa-twitter'></i>
+              </a>
+              <a className='link' href='www.linkedin.com' target='_blank'>
+                <i class='fab fa-linkedin'></i>
+              </a>
             </div>
-            <Plus className='plus-back' />
+            <div className='icon'>
+              <Plus class='plus-back' />
+            </div>
           </div>
         </div>
       </div>
-      <BgPatternTop />
-      <BgPatternBottom />
+      <BgPatternTop className='bg-pattern top' />
+      <BgPatternBottom className='bg-pattern bottom' />
     </section>
   );
 };
