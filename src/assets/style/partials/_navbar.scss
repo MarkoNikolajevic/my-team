@@ -121,3 +121,58 @@
 .navbar-nav-large {
   display: none;
 }
+
+// tablet media queries
+@media screen and (min-width: 48rem) {
+  .navbar {
+    padding: 3rem 2.5rem 0 2.5rem;
+  }
+
+  .navbar-nav-large {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+    .nav-item {
+      margin: 0 1rem;
+
+      .nav-link {
+        text-decoration: none;
+        color: $white;
+        @include transition;
+        @include p1;
+
+        &:hover {
+          color: $lightCoral;
+        }
+      }
+
+      &:last-of-type {
+        margin-left: auto;
+        border: 1px solid $white;
+        padding: 0.5rem 2rem;
+        border-radius: 50px;
+        @include transition;
+        cursor: pointer;
+
+        &:hover {
+          background: $white;
+
+          .nav-link {
+            color: $darkGreen;
+          }
+        }
+      }
+    }
+  }
+
+  .hamburger-menu {
+    display: none;
+  }
+
+  .brand-logo {
+    margin-right: 0 !important;
+  }
+}
