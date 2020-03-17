@@ -4,7 +4,7 @@ import { ReactComponent as BgPattern } from '../../img/bg-pattern-home-2.svg';
 
 const HomeHeader = () => {
   return (
-    <header className='main-header'>
+    <header className='main-header home-header'>
       <h1 className='header-title'>
         Find the
         <br /> best <span>talent</span>

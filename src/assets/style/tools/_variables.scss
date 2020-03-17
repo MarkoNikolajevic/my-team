@@ -9,9 +9,9 @@ sans-serif;
 }
 
 @mixin h1Medium {
-  font-weight: 700;
-  font-size: 4rem;
-  line-height: 3.5rem;
+  font-weight: 700 !important;
+  font-size: 4rem !important;
+  line-height: 3.5rem !important;
 }
 
 @mixin h1Small {
@@ -21,9 +21,9 @@ sans-serif;
 }
 
 @mixin h2Large {
-  font-weight: 700;
-  font-size: 3rem;
-  line-height: 3rem;
+  font-weight: 700 !important;
+  font-size: 3rem !important;
+  line-height: 3rem !important;
 }
 
 @mixin h2Small {

@@ -7,7 +7,6 @@
   color: $white;
   padding: $paddingMobile;
   position: relative;
-  height: 400px;
   overflow: hidden;
 
   .header-title {
@@ -31,5 +30,41 @@
     position: absolute;
     bottom: 0;
     transform: translate(100%, 50%);
+  }
+}
+
+.home-header {
+  height: 400px;
+}
+
+.about-header {
+  height: 330px;
+}
+
+// tablet media queries
+@media screen and (min-width: 48rem) {
+  .main-header {
+
+    .header-title {
+      @include h1Medium;
+    }
+
+    .section-title {
+      @include h2Large;
+    }
+
+    .intro {
+      line-height: 28px !important;
+      width: 65%;
+    }
+
+    .bg-pattern-about {
+      right: 0;
+      transform: translate(50%, 0);
+    }
+  }
+
+  .home-header {
+    height: 450px;
   }
 }

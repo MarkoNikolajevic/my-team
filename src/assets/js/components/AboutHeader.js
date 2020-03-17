@@ -4,7 +4,7 @@ import { ReactComponent as BgPattern } from '../../img/bg-pattern-about-1-mobile
 
 const AboutHeader = () => {
   return (
-    <header className='main-header'>
+    <header className='main-header about-header'>
       <h1 className='section-title'>About</h1>
       <p className='intro'>
         We help companies build dynamic teams made up of top global talent.
