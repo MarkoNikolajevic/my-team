@@ -18,7 +18,7 @@ const Clients = () => {
         <img className='client-logo' src={techRadar} alt='Logo Tech Radar' />
         <img className='client-logo' src={gadgets} alt='Logo Gadgets Now' />
       </div>
-      <BgPattern />
+      <BgPattern className='bg-pattern' />
     </section>
   );
 };

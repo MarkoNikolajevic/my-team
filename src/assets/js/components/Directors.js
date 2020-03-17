@@ -3,8 +3,6 @@ import React, { useState } from 'react';
 import { ReactComponent as BgPatternTop } from '../../img/bg-pattern-about-2-contact-1.svg';
 import { ReactComponent as BgPatternBottom } from '../../img/bg-pattern-home-4-about-3.svg';
 import { ReactComponent as Plus } from '../../img/icon-cross.svg';
-import { ReactComponent as IconTwitter } from '../../img/icon-twitter.svg';
-import { ReactComponent as IconLinkedin } from '../../img/icon-linkedin.svg';
 import nikita from '../../img/avatar-nikita.jpg';
 import christian from '../../img/avatar-christian.jpg';
 import cruz from '../../img/avatar-cruz.jpg';
