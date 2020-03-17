@@ -6,15 +6,18 @@ import { ReactComponent as Logo } from '../../img/logo.svg';
 const Footer = () => {
   return (
     <footer className='footer'>
-      <Logo />
-      <div className='page-links'>
-        <Link className='link' to='/'>
-          home
-        </Link>
-        <Link className='link' to='/about'>
-          about
-        </Link>
+      <div>
+        <Logo className='logo' />
+        <div className='page-links'>
+          <Link className='link' to='/'>
+            home
+          </Link>
+          <Link className='link' to='/about'>
+            about
+          </Link>
+        </div>
       </div>
+
       <p className='contact-info'>
         987 Hillcrest Lane
         <br />
