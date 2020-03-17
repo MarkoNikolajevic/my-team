@@ -19,7 +19,6 @@
 
     .director-card {
       position: relative;
-      display: flex;
       margin-bottom: 6rem;
 
       &:last-of-type {
@@ -121,5 +120,27 @@
   .bottom {
     bottom: 0;
     right: 0;
+  }
+}
+
+// tablet media queries
+@media screen and (min-width: 48rem) {
+  #directors {
+    padding-left: 100px;
+    padding-right: 100px;
+
+    .directors-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1rem;
+
+      .director-card {
+        margin-bottom: 3rem !important;
+      }
+    }
+
+    .top {
+      transform: translate(-50%, 0);
+    }
   }
 }
