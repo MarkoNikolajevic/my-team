@@ -48,3 +48,32 @@
     transform: translateX(50%);
   }
 }
+
+@media screen and (min-width: 48rem) {
+  #services {
+    padding: 6rem 6.125rem !important;
+
+    .section-title {
+      width: 80%;
+    }
+
+    .services-wrapper {
+      .service-card {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 0;
+
+        .service-text {
+          width: 80%;
+          margin-left: 2rem;
+        }
+
+        .service-title,
+        .service-info {
+          text-align: left;
+        }
+      }
+    }
+  }
+}

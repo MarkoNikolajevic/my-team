@@ -15,27 +15,33 @@ const Services = () => {
       <div className='services-wrapper'>
         <div className='service-card'>
           <IconPerson className='service-icon' />
-          <h3 className='service-title'>Experienced Individuals</h3>
-          <p className='service-info'>
-            Our network is made up of highly experienced professionals who are
-            passionate about what they do.
-          </p>
+          <div className='service-text'>
+            <h3 className='service-title'>Experienced Individuals</h3>
+            <p className='service-info'>
+              Our network is made up of highly experienced professionals who are
+              passionate about what they do.
+            </p>
+          </div>
         </div>
         <div className='service-card'>
           <IconCog className='service-icon' />
-          <h3 className='service-title'>Easy to Implement</h3>
-          <p className='service-info'>
-            Our processes have been refined over years of implementation meaning
-            our teams always deliver.
-          </p>
+          <div className='service-text'>
+            <h3 className='service-title'>Easy to Implement</h3>
+            <p className='service-info'>
+              Our processes have been refined over years of implementation
+              meaning our teams always deliver.
+            </p>
+          </div>
         </div>
         <div className='service-card'>
           <IconChart className='service-icon' />
-          <h3 className='service-title'>Enhanced Productivity</h3>
-          <p className='service-info'>
-            Our customized platform with in-built analytics helps you manage
-            your distributed teams.
-          </p>
+          <div className='service-text'>
+            <h3 className='service-title'>Enhanced Productivity</h3>
+            <p className='service-info'>
+              Our customized platform with in-built analytics helps you manage
+              your distributed teams.
+            </p>
+          </div>
         </div>
       </div>
       <BgPattern className='bg-pattern' />
