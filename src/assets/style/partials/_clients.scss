@@ -39,3 +39,31 @@
     transform: translate(-50%, -50%);
   }
 }
+
+// tablet media queries
+@media screen and (min-width: 48rem) {
+  #clients {
+    padding-left: 40px;
+    padding-right: 40px;
+
+    .clients-wrapper {
+      display: grid !important;
+      grid-template-columns: repeat(5, 1fr);
+      margin: 2rem 0;
+
+      .client-logo {
+        margin: 0 !important;
+        align-self: center;
+        justify-self: center;
+
+        &:last-of-type {
+          width: 50%;
+        }
+      }
+    }
+
+    .bg-pattern {
+      transform: translate(0, -50%);
+    }
+  }
+}
