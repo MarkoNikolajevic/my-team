@@ -54,3 +54,16 @@
     }
   }
 }
+
+// desktop media queries
+@media screen and (min-width: 90rem) {
+  #contact-section {
+    .section-title {
+      @include h2Large;
+    }
+
+    .contact-btn {
+      @include p1;
+    }
+  }
+}
