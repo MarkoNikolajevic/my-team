@@ -85,3 +85,26 @@
     }
   }
 }
+
+// desktop media queries
+@media screen and (min-width: 90rem) {
+  #testimonials {
+    .section-title {
+      @include h2Large;
+      width: 932px;
+      margin: 4rem auto 2rem auto;
+    }
+
+    .testimonials-wrapper {
+      flex-direction: row;
+
+      .testimonial {
+        margin: 3rem 1rem;
+
+        .testimonial-quote {
+          transform: translateY(-25%) !important;
+        }
+      }
+    }
+  }
+}
