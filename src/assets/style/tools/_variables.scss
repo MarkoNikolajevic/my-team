@@ -3,9 +3,9 @@ $fontFamily: 'Livvic',
 sans-serif;
 
 @mixin h1Large {
-  font-weight: 700;
-  font-size: 6.25rem;
-  line-height: 6.25rem;
+  font-weight: 700 !important;
+  font-size: 6.25rem !important;
+  line-height: 6.25rem !important;
 }
 
 @mixin h1Medium {

@@ -1,13 +1,15 @@
 import React from 'react';
 
 import { Link } from 'react-router-dom';
-import { ReactComponent as Logo } from '../../img/logo.svg';
+import logo from '../../img/logo.svg';
 
 const Footer = () => {
   return (
     <footer className='footer'>
       <div>
-        <Logo className='logo' />
+        <div className='brand-logo'>
+          <img src={logo} alt='My Team logo' className='logo' />
+        </div>
         <div className='page-links'>
           <Link className='link' to='/'>
             home
@@ -29,13 +31,13 @@ const Footer = () => {
       </p>
       <div className='social-links'>
         <a className='footer-link' href='www.facebook.com' target='_blank'>
-          <i class='fab fa-facebook-square'></i>
+          <i className='fab fa-facebook-square'></i>
         </a>
         <a className='footer-link' href='www.pinterest.com' target='_blank'>
-          <i class='fab fa-pinterest'></i>
+          <i className='fab fa-pinterest'></i>
         </a>
         <a className='footer-link' href='www.twitter.com' target='_blank'>
-          <i class='fab fa-twitter'></i>
+          <i className='fab fa-twitter'></i>
         </a>
       </div>
       <p className='copyright'>Copyright 2020. All Rights Reserved</p>

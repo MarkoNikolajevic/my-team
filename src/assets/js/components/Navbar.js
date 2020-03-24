@@ -2,7 +2,7 @@ import React, { Fragment, useState } from 'react';
 
 import { Link } from 'react-router-dom';
 
-import { ReactComponent as Logo } from '../../img/logo.svg';
+import logo from '../../img/logo.svg';
 
 import HamburgerMenu from '../components/HamburgerMenu';
 import NavMobile from '../components/NavMobile';
@@ -13,7 +13,7 @@ const Navbar = () => {
     <Fragment>
       <nav className='navbar'>
         <div className='brand-logo'>
-          <Logo />
+          <img className='logo' src={logo} alt='My Team logo' />
         </div>
         <HamburgerMenu open={open} setOpen={setOpen} />
         <ul className='navbar-nav-large'>

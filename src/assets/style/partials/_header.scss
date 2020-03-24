@@ -68,3 +68,21 @@
     height: 450px;
   }
 }
+
+@media screen and (min-width: 90rem) {
+  .home-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 165px;
+    padding-right: 165px;
+
+    .header-title {
+      @include h1Large;
+      text-align: left;
+    }
+
+    .intro {
+      @include p1;
+    }
+  }
+}

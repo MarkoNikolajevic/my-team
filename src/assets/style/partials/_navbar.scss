@@ -6,6 +6,11 @@
 
   .brand-logo {
     margin-right: auto;
+    width: 128px;
+
+    .logo {
+      width: 100%;
+    }
   }
 }
 
@@ -22,6 +27,10 @@
     height: 3px;
     margin: 4px 0;
     @include transition;
+
+    &:first-of-type {
+      margin-top: 0 !important;
+    }
   }
 }
 
@@ -174,5 +183,12 @@
 
   .brand-logo {
     margin-right: 0 !important;
+  }
+}
+
+@media screen and (min-width: 90rem) {
+  .navbar {
+    padding-left: 165px;
+    padding-right: 165px;
   }
 }

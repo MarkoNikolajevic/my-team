@@ -8,10 +8,12 @@ import { ReactComponent as IconChart } from '../../img/icon-chart.svg';
 const Services = () => {
   return (
     <section id='services'>
-      <div className='divider'></div>
-      <h2 className='section-title'>
-        Build & manage distributed teams like no one else.
-      </h2>
+      <div>
+        <div className='divider'></div>
+        <h2 className='section-title'>
+          Build & manage distributed teams like no one else.
+        </h2>
+      </div>
       <div className='services-wrapper'>
         <div className='service-card'>
           <IconPerson className='service-icon' />
