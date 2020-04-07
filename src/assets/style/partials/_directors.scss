@@ -144,3 +144,18 @@
     }
   }
 }
+
+@media screen and (min-width: 90rem) {
+  #directors {
+    padding-left: 165px;
+    padding-right: 165px;
+
+    .section-title {
+      @include h2Large;
+    }
+
+    .directors-wrapper {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
