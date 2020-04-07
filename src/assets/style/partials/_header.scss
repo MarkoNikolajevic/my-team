@@ -31,6 +31,10 @@
     bottom: 0;
     transform: translate(100%, 50%);
   }
+
+  .bg-pattern-left {
+    display: none;
+  }
 }
 
 .home-header {
@@ -82,8 +86,35 @@
       text-align: left;
     }
 
+    .second-col {
+      padding-left: 7rem;
+    }
+
+    .divider-lg {
+      height: 4px;
+      width: 50px;
+      background: $raptureBlue;
+    }
+
     .intro {
       @include p1;
+      text-align: left;
+      margin-top: 5rem;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+    }
+
+    .bg-pattern {
+      right: 0;
+      transform: translateX(-50%);
+    }
+
+    .bg-pattern-left {
+      display: block;
+      position: absolute;
+      left: 0;
+      transform: translateX(-50%);
     }
   }
 }
