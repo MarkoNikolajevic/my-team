@@ -190,5 +190,15 @@
   .navbar {
     padding-left: 165px;
     padding-right: 165px;
+
+    .brand-logo {
+      width: 160px;
+      height: 40px;
+
+      .logo {
+        width: 160px;
+        height: 40px;
+      }
+    }
   }
 }
