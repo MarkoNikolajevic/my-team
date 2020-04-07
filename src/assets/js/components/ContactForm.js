@@ -15,7 +15,7 @@ const formSchema = Yup.object().shape({
   email: Yup.string()
     .email('Please use a valid email address')
     .required('This field is required'),
-  message: Yup.string().required('This field is required')
+  message: Yup.string().required('This field is required'),
 });
 
 export default () => {
@@ -27,9 +27,9 @@ export default () => {
     axios({
       method: 'POST',
       url: 'https://formspree.io/xqkbvzej',
-      data: values
+      data: values,
     })
-      .then(res => {
+      .then((res) => {
         actions.setSubmitting(false);
         actions.resetForm();
         handleServerResponse(
@@ -37,93 +37,109 @@ export default () => {
           'Thanks for submitting, we will get you back as soon as possible'
         );
       })
-      .catch(error => {
+      .catch((error) => {
         actions.setSubmitting(false);
         handleServerResponse(false, error.response.data.error);
       });
   };
   return (
     <section id='contact-form'>
-      <h1 className='page-title'>
-        Contact <br />
-        <span>Ask us about</span>
-      </h1>
-      <div className='contact-desc'>
-        <div className='contact-info'>
-          <IconPerson className='contact-icon' />
-          <p>The quality of our talent network</p>
-        </div>
-        <div className='contact-info'>
-          <IconCog className='contact-icon' />
-          <p>Usage & implementation of our software</p>
-        </div>
-        <div className='contact-info'>
-          <IconChart className='contact-icon' />
-          <p>How we help drive innovation</p>
+      <div>
+        <h1 className='page-title'>
+          Contact <br />
+          <span>Ask us about</span>
+        </h1>
+        <div className='contact-desc'>
+          <div className='contact-info'>
+            <IconPerson className='contact-icon' />
+            <p>The quality of our talent network</p>
+          </div>
+          <div className='contact-info'>
+            <IconCog className='contact-icon' />
+            <p>Usage & implementation of our software</p>
+          </div>
+          <div className='contact-info'>
+            <IconChart className='contact-icon' />
+            <p>How we help drive innovation</p>
+          </div>
         </div>
       </div>
-      <Formik
-        initialValues={{
-          name: '',
-          email: '',
-          company: '',
-          title: '',
-          message: ''
-        }}
-        onSubmit={handleOnSubmit}
-        validationSchema={formSchema}
-      >
-        {({ isSubmitting }) => (
-          <Form className='form' noValidate>
-            <Field type='text' id='name' name='name' placeholder='Name' />
-            <ErrorMessage name='name' className='errorMsg' component='small' />
-            <Field
-              type='email'
-              id='email'
-              name='email'
-              placeholder='Email Address'
-            />
-            <ErrorMessage name='email' className='errorMsg' component='small' />
-            <Field
-              type='text'
-              id='company'
-              name='company'
-              placeholder='Company Name'
-            />
-            <ErrorMessage
-              name='company'
-              className='errorMsg'
-              component='small'
-            />
-            <Field type='text' id='title' name='title' placeholder='Title' />
-            <ErrorMessage name='title' className='errorMsg' component='small' />
-            <Field
-              id='message'
-              name='message'
-              rows='3'
-              placeholder='Message'
-              component='textarea'
-            />
-            <ErrorMessage
-              name='message'
-              className='errorMsg'
-              component='small'
-            />
-            <button
-              type='submit'
-              disabled={isSubmitting}
-              className='submit-btn'
-            >
-              submit
-            </button>
-            {serverState && (
-              <p className={!serverState.ok ? 'errorMsg' : 'okMsg'}>
-                {serverState.msg}
-              </p>
-            )}
-          </Form>
-        )}
-      </Formik>
+      <div className='form-container'>
+        <Formik
+          initialValues={{
+            name: '',
+            email: '',
+            company: '',
+            title: '',
+            message: '',
+          }}
+          onSubmit={handleOnSubmit}
+          validationSchema={formSchema}
+        >
+          {({ isSubmitting }) => (
+            <Form className='form' noValidate>
+              <Field type='text' id='name' name='name' placeholder='Name' />
+              <ErrorMessage
+                name='name'
+                className='errorMsg'
+                component='small'
+              />
+              <Field
+                type='email'
+                id='email'
+                name='email'
+                placeholder='Email Address'
+              />
+              <ErrorMessage
+                name='email'
+                className='errorMsg'
+                component='small'
+              />
+              <Field
+                type='text'
+                id='company'
+                name='company'
+                placeholder='Company Name'
+              />
+              <ErrorMessage
+                name='company'
+                className='errorMsg'
+                component='small'
+              />
+              <Field type='text' id='title' name='title' placeholder='Title' />
+              <ErrorMessage
+                name='title'
+                className='errorMsg'
+                component='small'
+              />
+              <Field
+                id='message'
+                name='message'
+                rows='3'
+                placeholder='Message'
+                component='textarea'
+              />
+              <ErrorMessage
+                name='message'
+                className='errorMsg'
+                component='small'
+              />
+              <button
+                type='submit'
+                disabled={isSubmitting}
+                className='submit-btn'
+              >
+                submit
+              </button>
+              {serverState && (
+                <p className={!serverState.ok ? 'errorMsg' : 'okMsg'}>
+                  {serverState.msg}
+                </p>
+              )}
+            </Form>
+          )}
+        </Formik>
+      </div>
       <BgTop className='bg-pattern top' />
       <BgBottom className='bg-pattern bottom' />
     </section>

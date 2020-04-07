@@ -118,6 +118,7 @@
 
     .page-title {
       @include h1Medium;
+      margin-bottom: 0;
 
       span {
         font-size: 2rem !important;
@@ -138,6 +139,25 @@
 
     .bottom {
       transform: translate(50%, 0);
+    }
+  }
+}
+
+// desktop media queries
+@media screen and (min-width: 90rem) {
+  #contact-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 165px;
+    padding-right: 165px;
+
+    .page-title {
+      text-align: left;
+      margin-top: 0;
+    }
+
+    .form-container {
+      margin-bottom: 50px;
     }
   }
 }
