@@ -82,10 +82,25 @@
   #services {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding-left: 165px !important;
+    padding-right: 165px !important;
 
     .section-title {
       @include h2Large;
       width: 445px;
+    }
+
+    .service-card {
+      align-items: flex-start !important;
+    }
+
+    .service-title {
+      margin-top: 0;
+    }
+
+    .bg-pattern {
+      bottom: 0 !important;
+      top: unset;
     }
   }
 }
