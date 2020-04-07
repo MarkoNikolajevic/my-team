@@ -75,11 +75,14 @@
 }
 
 @media screen and (min-width: 90rem) {
+  .main-header {
+    padding-left: 165px;
+    padding-right: 165px;
+  }
+
   .home-header {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-left: 165px;
-    padding-right: 165px;
 
     .header-title {
       @include h1Large;
@@ -115,6 +118,33 @@
       position: absolute;
       left: 0;
       transform: translateX(-50%);
+    }
+  }
+
+  .about-header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    text-align: left;
+
+    .section-title {
+      font-size: 4rem !important;
+      line-height: 6.25rem !important;
+      margin: 0;
+      align-self: flex-start;
+      padding-top: 6rem;
+    }
+
+    .intro {
+      margin: 0;
+      @include p1;
+      width: 100%;
+    }
+
+    .divider-lg-about {
+      width: 50px;
+      height: 4px;
+      background: $lightCoral;
+      margin-bottom: 4rem;
     }
   }
 }
