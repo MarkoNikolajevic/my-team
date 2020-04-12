@@ -14,12 +14,21 @@
   }
 
   .directors-wrapper {
-    margin: 3rem 0 2rem;
     width: 100%;
+    margin-bottom: 1rem;
 
     .director-card {
       position: relative;
-      margin-bottom: 6rem;
+      margin: 0 auto 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transform: perspective(1000px) rotateY(var(--rotate-y, 0));
+      transform-style: preserve-3d;
+      transition: 150ms;
+      height: 253px;
+      width: 327px;
 
       &:last-of-type {
         margin-bottom: 3rem;
@@ -31,66 +40,43 @@
         margin-bottom: 0;
       }
 
-      .front-side {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+      .front-side,
+      .back-side {
+        position: absolute;
+        backface-visibility: hidden;
         text-align: center;
-        background: $sacramentoStateGreen;
         padding: 2rem 0;
-        position: relative;
         width: 100%;
-        z-index: 33;
+      }
+
+      .front-side {
+        background: $sacramentoStateGreen;
 
         .director-img {
           width: 96px;
           height: 96px;
-          border: 2px solid #c4fffe;
+          border: 2px solid #cafffe;
           border-radius: 50%;
         }
 
         .director-job {
           @include p2;
-          margin-bottom: 2rem;
-        }
-
-        .icon {
-          width: 56px;
-          height: 56px;
-          background: $lightCoral;
-          border-radius: 50%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          bottom: 0;
-          position: absolute;
-          transform: translateY(50%);
-          @include transition;
-          cursor: pointer;
-
-          &:hover {
-            background: $raptureBlue;
-          }
         }
       }
 
       .back-side {
         background: $darkGreen;
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 2rem;
-        position: absolute;
-        z-index: 2;
-        margin: auto;
+        transform: rotateY(180deg);
 
         .director-quote {
           @include p2;
+          width: 80%;
+          margin: auto;
         }
 
         .social-links {
           display: flex;
+          justify-content: center;
 
           .link {
             font-size: 25px;
@@ -103,6 +89,41 @@
             }
           }
         }
+      }
+    }
+
+    .flipped {
+      --rotate-y: 180deg;
+    }
+
+    .icon {
+      width: 56px;
+      height: 56px;
+      background: $lightCoral;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      transform: translateY(200%) rotate(0);
+      margin-top: 1rem;
+      @include transition;
+      cursor: pointer;
+
+      &:hover {
+        background: $raptureBlue;
+      }
+    }
+
+    .icon-flipped {
+      background: $raptureBlue !important;
+
+      svg {
+        transform: rotate(45deg);
+      }
+
+      &:hover {
+        background: $lightCoral !important;
       }
     }
   }
@@ -132,16 +153,28 @@
     .directors-wrapper {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-gap: 1rem;
+      gap: 2rem;
+      margin-bottom: 4rem !important;
 
       .director-card {
-        margin-bottom: 3rem !important;
+        margin-bottom: 0 !important;
+        width: 281px !important;
+
+        .back-side {
+          padding-top: 0;
+        }
       }
     }
 
     .top {
       transform: translate(-50%, 0);
     }
+  }
+}
+
+@media screen and (min-width: 75rem) {
+  .directors-wrapper {
+    grid-template-columns: repeat(3, 1fr) !important;
   }
 }
 
@@ -155,7 +188,15 @@
     }
 
     .directors-wrapper {
-      grid-template-columns: repeat(3, 1fr);
+      // grid-template-columns: repeat(3, 1fr);
+
+      .director-card {
+        width: 350px !important;
+
+        .back-side {
+          padding-top: 1rem;
+        }
+      }
     }
   }
 }
