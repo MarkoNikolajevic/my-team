@@ -4,7 +4,6 @@ import DirectorList from './DirectorList';
 
 import { ReactComponent as BgPatternTop } from '../../img/bg-pattern-about-2-contact-1.svg';
 import { ReactComponent as BgPatternBottom } from '../../img/bg-pattern-home-4-about-3.svg';
-import { ReactComponent as Plus } from '../../img/icon-cross.svg';
 import nikita from '../../img/avatar-nikita.jpg';
 import christian from '../../img/avatar-christian.jpg';
 import cruz from '../../img/avatar-cruz.jpg';
