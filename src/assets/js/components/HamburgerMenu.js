@@ -16,8 +16,8 @@ const HamburgerMenu = ({ open, setOpen }) => {
       className='hamburger-menu'
       open={open}
       onClick={() => setOpen(!open)}
-      aria-label='Menu'
-      aria-controls='navigation'
+      /* aria-label='Menu' */
+      /* aria-controls='navigation' */
     >
       <div className='bar'></div>
       <div className='bar'></div>
@@ -29,7 +29,7 @@ const HamburgerMenu = ({ open, setOpen }) => {
 const closeNav = () => {
   let links = document.querySelectorAll('.nav-mobile-link');
   links = Array.from(links);
-  links.forEach(elem => {
+  links.forEach((elem) => {
     elem.addEventListener('click', () => {
       const menu = document.querySelector('.hamburger-menu');
       const mobileNav = document.querySelector('.navbar-nav-mobile');

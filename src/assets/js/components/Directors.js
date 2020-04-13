@@ -84,8 +84,6 @@ const DIRECTORS = [
     job: 'Head of Talent',
     quote:
       'Empowered teams create truly amazing products. Set the north star and let them follow it.',
-    twitter: 'www.twitter.com',
-    linkedin: 'www.linkedin.com',
   },
 ];
 

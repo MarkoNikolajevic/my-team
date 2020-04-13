@@ -92,6 +92,10 @@
 
     .service-card {
       align-items: flex-start !important;
+
+      &:last-of-type {
+        margin-bottom: 27px !important;
+      }
     }
 
     .service-title {

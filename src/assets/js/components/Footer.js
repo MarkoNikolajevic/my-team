@@ -30,13 +30,28 @@ const Footer = () => {
         Call Us: 949-833-7432
       </p>
       <div className='social-links'>
-        <a className='footer-link' href='www.facebook.com' target='_blank'>
+        <a
+          className='footer-link'
+          href='https://www.facebook.com'
+          target='_blank'
+          rel='noreferrer noopener'
+        >
           <i className='fab fa-facebook-square'></i>
         </a>
-        <a className='footer-link' href='www.pinterest.com' target='_blank'>
+        <a
+          className='footer-link'
+          href='https://www.pinterest.com'
+          target='_blank'
+          rel='noreferrer noopener'
+        >
           <i className='fab fa-pinterest'></i>
         </a>
-        <a className='footer-link' href='www.twitter.com' target='_blank'>
+        <a
+          className='footer-link'
+          href='https://www.twitter.com'
+          target='_blank'
+          rel='noreferrer noopener'
+        >
           <i className='fab fa-twitter'></i>
         </a>
       </div>

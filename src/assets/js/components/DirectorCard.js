@@ -20,7 +20,7 @@ const DirectorCard = ({ director }) => {
         <p className='director-quote'>"{director.quote}"</p>
         <div className='social-links'>
           <a
-            href={director.twitter}
+            href='https://twitter.com/'
             className='link'
             target='_blank'
             rel='noopener noreferrer'
@@ -28,7 +28,7 @@ const DirectorCard = ({ director }) => {
             <i className='fab fa-twitter'></i>
           </a>
           <a
-            href={director.linkedin}
+            href='https://linkedin.com/'
             className='link'
             target='_blank'
             rel='noopener noreferrer'
