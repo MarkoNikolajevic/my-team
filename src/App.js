@@ -7,11 +7,14 @@ import About from './assets/js/pages/About';
 import Contact from './assets/js/pages/Contact';
 import Footer from './assets/js/components/Footer';
 
+import ScrollToTop from './assets/js/components/ScrollToTop';
+
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Navbar />
       <Switch>
         <Route exact path='/'>
