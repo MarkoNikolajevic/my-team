@@ -86,6 +86,14 @@
   }
 }
 
+@media screen and (min-width: 75rem) {
+  .testimonials-wrapper {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+  }
+}
+
 // desktop media queries
 @media screen and (min-width: 90rem) {
   #testimonials {
@@ -99,7 +107,7 @@
     }
 
     .testimonials-wrapper {
-      flex-direction: row;
+      // flex-direction: row;
 
       .testimonial {
         margin: 3rem 1rem;
