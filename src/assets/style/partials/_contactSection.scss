@@ -56,7 +56,7 @@
 }
 
 // desktop media queries
-@media screen and (min-width: 90rem) {
+@media screen and (min-width: 75rem) {
   #contact-section {
     .section-title {
       @include h2Large;
