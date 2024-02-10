@@ -14,7 +14,7 @@ export default function Navbar() {
     <header className='pt-8'>
       <div className='container flex gap-12'>
         <Image src='./logo.svg' alt='My Team logo' width={128} height={32} />
-        <nav className='flex gap-10'>
+        <nav className='hidden md:flex md:gap-10'>
           {navLinks.map(link => (
             <Link
               key={link.href}

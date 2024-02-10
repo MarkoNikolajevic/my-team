@@ -1,5 +1,5 @@
 import ContactCta from './ui/contact-cta';
-import Hero from './ui/hero';
+import Hero from './ui/home/hero';
 import Features from './ui/home/features';
 import Testimonials from './ui/home/testimonials';
 

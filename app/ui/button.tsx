@@ -11,7 +11,7 @@ const buttonVariants = cva(
           'border-[2px] bg-transparent px-8 text-white border-white hover:bg-white hover:text-darkGreen',
         'primary-dark':
           'border-[2px] bg-transparent text-darkGreen border-darkGreen hover:bg-darkGreen hover:text-white',
-        secondary: ''
+        secondary: 'bg-white text-darkGreen hover:bg-raptureBlue'
       }
     },
     defaultVariants: {
