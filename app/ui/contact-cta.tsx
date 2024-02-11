@@ -4,9 +4,9 @@ import Link from 'next/link';
 
 export default function ContactCta() {
   return (
-    <section className='py-21 relative bg-lightCoral'>
-      <div className='container mb-4 flex flex-col items-center'>
-        <h2 className='text-3.5xl mb-6 text-center font-bold'>
+    <section className='relative overflow-hidden bg-lightCoral py-21'>
+      <div className='container mb-4 flex flex-col items-center md:flex-row md:items-center md:justify-between'>
+        <h2 className='text-center text-3.5xl font-bold max-md:mb-6'>
           Ready to get started?
         </h2>
         <Button variant='primary-dark'>
@@ -17,8 +17,8 @@ export default function ContactCta() {
         src='/bg-pattern/bg-pattern-home-6-about-5.svg'
         alt=''
         width={200}
-        height={144}
-        className='absolute bottom-0 left-0'
+        height={244}
+        className='absolute -bottom-5 left-0'
       />
     </section>
   );

@@ -19,10 +19,13 @@ export default function DirectorCard({
 
   return (
     <div
-      className={cn('pb-13 relative flex h-64 justify-center px-6 pt-8', {
-        'bg-sacramentoStateGreen': !isFlipped,
-        'bg-darkGreen': isFlipped
-      })}
+      className={cn(
+        'relative flex h-64 justify-center px-6 pb-13 pt-8 md:col-span-6',
+        {
+          'bg-sacramentoStateGreen': !isFlipped,
+          'bg-darkGreen': isFlipped
+        }
+      )}
     >
       {isFlipped ? (
         <div className='text-center'>

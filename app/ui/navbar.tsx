@@ -8,6 +8,7 @@ import { Bars3Icon } from '@heroicons/react/24/solid';
 import { navLinks } from '@/data/nav-links';
 import { cn } from '@/lib/utils';
 import NavMobile from './nav-mobile';
+import Button from './button';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -33,8 +34,14 @@ export default function Navbar() {
             </Link>
           ))}
         </nav>
-        <div className='ml-auto text-white md:hidden'>
-          <Bars3Icon className='h-8 w-8' onClick={() => setIsMenuOpen(true)} />
+        <div className='ml-auto'>
+          <Button variant='primary-light' className='hidden max-w-40 md:block'>
+            <Link href='/contact'>contact Us</Link>
+          </Button>
+          <Bars3Icon
+            className='h-8 w-8 text-white md:hidden'
+            onClick={() => setIsMenuOpen(true)}
+          />
         </div>
       </div>
       {isMenuOpen && <NavMobile setIsMenuOpen={setIsMenuOpen} />}

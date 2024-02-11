@@ -5,17 +5,17 @@ import DirectorCard from '../director-card';
 
 export default function Directors() {
   return (
-    <section className='pt-22 pb-29 relative overflow-hidden bg-deepJungleGreen'>
+    <section className='relative overflow-hidden bg-deepJungleGreen pb-29 pt-22 md:pb-32 md:pt-25'>
       <Image
         src='/bg-pattern/bg-pattern-about-2-contact-1.svg'
         alt=''
         width={200}
         height={200}
-        className='absolute -left-25 -top-25'
+        className='absolute -left-25 -top-25 md:top-0'
       />
       <div className='container text-white'>
         <h2 className='text-center text-3.5xl font-bold'>Meet the directors</h2>
-        <div className='gap-13 mt-12 flex flex-col'>
+        <div className='mt-12 flex flex-col gap-13 md:mx-14 md:grid md:grid-cols-12 md:gap-x-3 md:gap-y-16'>
           {directors.map((director, index) => (
             <Fragment key={index}>
               <DirectorCard {...director} />
