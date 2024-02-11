@@ -28,6 +28,7 @@ const config: Config = {
     },
     extend: {
       fontSize: {
+        xxs: '0.625rem', // 10px
         '3.5xl': [
           '2rem',
           {
@@ -51,6 +52,7 @@ const config: Config = {
         '4.5': '1.125rem', // 18px
         '13': '3.25rem', // 52px
         '15': '3.75rem', // 60px
+        '18': '4.5rem', // 72px
         '21': '5.25rem', // 84px
         '22': '5.5rem', // 88px
         '25': '6.25rem', // 100px
@@ -59,9 +61,12 @@ const config: Config = {
         '30': '7.5rem', // 120px
         '35': '8.75rem', // 140px
         '41': '10.25rem', // 164px
+        '50': '12.5rem', // 200px
       }
     }
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms')
+  ]
 };
 export default config;

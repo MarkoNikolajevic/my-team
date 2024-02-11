@@ -1,6 +1,5 @@
 import Image from 'next/image';
-import Button from './button';
-import Link from 'next/link';
+import ButtonLink from './button-link';
 
 export default function ContactCta() {
   return (
@@ -9,9 +8,7 @@ export default function ContactCta() {
         <h2 className='text-center text-3.5xl font-bold max-md:mb-6 lg:text-5xl'>
           Ready to get started?
         </h2>
-        <Button variant='primary-dark'>
-          <Link href='/contact'>contact Us</Link>
-        </Button>
+        <ButtonLink href='/contact' label='contact us' variant='primary-dark' />
       </div>
       <Image
         src='/bg-pattern/bg-pattern-home-6-about-5.svg'

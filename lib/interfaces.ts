@@ -37,3 +37,9 @@ export interface Client {
   name: string;
   logo: string;
 }
+
+export interface HelpTopic {
+  title: string;
+  icon: string;
+  alt: string;
+}

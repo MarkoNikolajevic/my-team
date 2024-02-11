@@ -3,12 +3,12 @@ import { cn } from '@/lib/utils';
 import { forwardRef } from 'react';
 
 const buttonVariants = cva(
-  'focus-visible:ring-ring inline-flex h-12 px-8 items-center justify-center whitespace-nowrap rounded-full text-lg font-semibold lowercase transition-colors focus-visible:outline-none focus-visible:ring-1 disabled:pointer-events-none disabled:opacity-25',
+  'focus-visible:ring-ring flex h-12 min-w-40 items-center justify-center whitespace-nowrap rounded-full text-lg font-semibold lowercase transition-colors focus-visible:outline-none focus-visible:ring-1 disabled:pointer-events-none disabled:opacity-25',
   {
     variants: {
       variant: {
         'primary-light':
-          'border-[2px] bg-transparent px-8 text-white border-white hover:bg-white hover:text-darkGreen',
+          'border-[2px] bg-transparent text-white border-white hover:bg-white hover:text-darkGreen',
         'primary-dark':
           'border-[2px] bg-transparent text-darkGreen border-darkGreen hover:bg-darkGreen hover:text-white',
         secondary: 'bg-white text-darkGreen hover:bg-raptureBlue'

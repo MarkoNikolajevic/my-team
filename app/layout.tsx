@@ -20,7 +20,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={`${livvic.className} bg-midnightGreen antialiased`}>
+      <body
+        className={`${livvic.className} bg-midnightGreen antialiased lg:min-h-screen`}
+      >
         <Navbar />
         {children}
         <Footer />

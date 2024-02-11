@@ -5,7 +5,7 @@ import { XMarkIcon } from '@heroicons/react/24/solid';
 import { dropIn } from '@/lib/animations';
 import Backdrop from './backdrop';
 import { navLinks } from '@/data/nav-links';
-import Button from './button';
+import ButtonLink from './button-link';
 
 interface NavMobileProps {
   setIsMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
@@ -35,9 +35,12 @@ export default function NavMobile({ setIsMenuOpen }: NavMobileProps) {
               {link.label}
             </Link>
           ))}
-          <Button variant='primary-light' className='max-w-40'>
-            <Link href='/contact'>contact Us</Link>
-          </Button>
+          <ButtonLink
+            href='/contact'
+            label='contact us'
+            variant='primary-light'
+            className='max-w-40'
+          />
         </nav>
         <Image
           src='./bg-pattern/bg-pattern-about-1-mobile-nav-1.svg'

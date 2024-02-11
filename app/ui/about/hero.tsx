@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function Hero() {
   return (
-    <section className='lg:pb-30 relative overflow-hidden pb-27 text-center text-white md:pb-28'>
+    <section className='relative overflow-hidden pb-27 text-center text-white md:pb-28 lg:pb-30'>
       <div className='container lg:flex lg:justify-between'>
         <h1 className='mb-4.5 text-balance text-4.5xl font-bold md:mb-6 md:text-6.5xl'>
           About
