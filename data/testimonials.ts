@@ -1,9 +1,4 @@
-export interface Testimonial {
-  avatar: string;
-  name: string;
-  role: string;
-  comment: string;
-}
+import { Testimonial } from '@/lib/interfaces';
 
 export const testimonials: Testimonial[] = [
   {

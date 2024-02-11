@@ -1,8 +1,4 @@
-export interface SocialLink {
-  icon: string;
-  label: string;
-  href: string;
-}
+import { SocialLink } from '@/lib/interfaces';
 
 export const socialLinks: SocialLink[] = [
   {
