@@ -5,8 +5,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { PlusIcon } from '@heroicons/react/24/solid';
 import { cn } from '@/lib/utils';
-import Avatar from './avatar';
 import { Director } from '@/lib/interfaces';
+import Avatar from './avatar';
 
 export default function DirectorCard({
   name,
