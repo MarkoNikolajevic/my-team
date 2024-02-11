@@ -4,7 +4,7 @@ import Avatar from '../avatar';
 
 export default function Testimonials() {
   return (
-    <section className='relative overflow-hidden bg-deepJungleGreen pb-41 pt-35 text-white'>
+    <section className='relative overflow-hidden bg-deepJungleGreen pb-41 pt-35 text-white lg:pb-35'>
       <Image
         src='/bg-pattern/bg-pattern-home-4-about-3.svg'
         alt=''
@@ -13,15 +13,15 @@ export default function Testimonials() {
         className='absolute left-0 top-0'
       />
       <div className='container'>
-        <h2 className='text-balance text-center text-3.5xl font-bold'>
+        <h2 className='text-balance text-center text-3.5xl font-bold lg:text-5xl'>
           Delivering real results for top companies. Some of our{' '}
           <span className='text-raptureBlue'>success stories</span>.
         </h2>
-        <div className='mt-16 flex flex-col gap-16'>
+        <div className='mt-16 flex flex-col gap-16 lg:grid lg:grid-cols-12 lg:gap-8'>
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className='relative flex flex-col items-center text-center'
+              className='relative flex flex-col items-center text-center lg:col-span-4'
             >
               <p className='z-10 text-pretty font-semibold'>
                 {testimonial.comment}

@@ -14,8 +14,10 @@ export default function Directors() {
         className='absolute -left-25 -top-25 md:top-0'
       />
       <div className='container text-white'>
-        <h2 className='text-center text-3.5xl font-bold'>Meet the directors</h2>
-        <div className='mt-12 flex flex-col gap-13 md:mx-14 md:grid md:grid-cols-12 md:gap-x-3 md:gap-y-16'>
+        <h2 className='text-center text-3.5xl font-bold lg:text-5xl'>
+          Meet the directors
+        </h2>
+        <div className='mt-12 flex flex-col gap-13 md:mx-14 md:grid md:grid-cols-12 md:gap-x-3 md:gap-y-16 lg:gap-x-7'>
           {directors.map((director, index) => (
             <Fragment key={index}>
               <DirectorCard {...director} />

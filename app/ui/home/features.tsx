@@ -3,13 +3,15 @@ import { features } from '@/data/features';
 
 export default function Features() {
   return (
-    <section className='md:py-25 relative overflow-hidden bg-sacramentoStateGreen py-16 text-white'>
-      <div className='container'>
-        <div className='mb-8 h-1 w-12 bg-lightCoral' />
-        <h2 className='text-3.5xl w-2/3 font-bold'>
-          Build & manage distributed teams like no one else.
-        </h2>
-        <div className='mt-14 flex flex-col gap-12'>
+    <section className='relative overflow-hidden bg-sacramentoStateGreen py-16 text-white md:py-25'>
+      <div className='container lg:flex lg:gap-32'>
+        <div className='lg:w-2/5'>
+          <div className='mb-8 h-1 w-12 bg-lightCoral' />
+          <h2 className='text-3.5xl font-bold max-lg:w-2/3 lg:text-5xl'>
+            Build & manage distributed teams like no one else.
+          </h2>
+        </div>
+        <div className='mt-14 flex flex-col gap-12 lg:col-span-7'>
           {features.map((feature, index) => (
             <div
               key={index}
@@ -38,7 +40,7 @@ export default function Features() {
         alt=''
         width={200}
         height={244}
-        className='-right-25 absolute top-0'
+        className='absolute -right-25 max-lg:top-0 lg:bottom-0'
       />
     </section>
   );

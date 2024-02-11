@@ -5,7 +5,7 @@ import Testimonials from './ui/home/testimonials';
 
 export default function Home() {
   return (
-    <main className='pt-20'>
+    <main className='pt-20 lg:pt-32'>
       <Hero />
       <Features />
       <Testimonials />

@@ -20,7 +20,7 @@ export default function DirectorCard({
   return (
     <div
       className={cn(
-        'relative flex h-64 justify-center px-6 pb-13 pt-8 md:col-span-6',
+        'relative flex h-64 justify-center px-6 pb-13 pt-8 md:col-span-6 lg:col-span-4',
         {
           'bg-sacramentoStateGreen': !isFlipped,
           'bg-darkGreen': isFlipped
