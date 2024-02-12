@@ -27,6 +27,7 @@ export default function Form() {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors }
   } = useForm<FormValues>({
     mode: 'onBlur',
@@ -34,8 +35,10 @@ export default function Form() {
     shouldFocusError: false
   });
 
-  const onSubmit: SubmitHandler<FormValues> = data =>
+  const onSubmit: SubmitHandler<FormValues> = data => {
     alert(JSON.stringify(data));
+    reset();
+  };
 
   return (
     <section className='text-white lg:col-span-6'>

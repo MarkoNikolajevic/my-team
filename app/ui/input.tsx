@@ -2,7 +2,7 @@ import { cn } from '@/lib/utils';
 import { FieldError, FieldValues, UseFormRegister } from 'react-hook-form';
 
 interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
-  register: UseFormRegister<any>;
+  register: UseFormRegister<FieldValues>;
   error?: FieldError | undefined;
   errorMessage?: string;
 }
@@ -31,7 +31,7 @@ export default function Input({
       />
       <small
         className={cn(
-          'text-xxs inline-block h-2.5 w-full font-bold italic text-lightCoral',
+          'inline-block h-2.5 w-full text-xxs font-bold italic text-lightCoral',
           {
             visible: error,
             invisible: !error

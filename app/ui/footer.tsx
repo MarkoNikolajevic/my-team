@@ -1,7 +1,7 @@
-import { navLinks } from '@/data/nav-links';
-import { socialLinks } from '@/data/social-links';
 import Image from 'next/image';
 import Link from 'next/link';
+import { navLinks } from '@/data/nav-links';
+import { socialLinks } from '@/data/social-links';
 
 export default function Footer() {
   return (
