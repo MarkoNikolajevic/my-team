@@ -9,7 +9,7 @@ export default function Hero() {
         </h1>
         <div className='lg:flex lg:flex-col'>
           <div className='hidden lg:mb-10 lg:block lg:h-1 lg:w-12 lg:bg-lightCoral' />
-          <p className='text-pretty font-semibold md:max-w-prose lg:text-left'>
+          <p className='text-pretty font-semibold md:max-w-prose lg:text-left lg:text-lg'>
             We help companies build dynamic teams made up of top global talent.
             Using our network of passionate professionals we drive innovation
             and deliver incredible outcomes. Talented, diverse teams shape the

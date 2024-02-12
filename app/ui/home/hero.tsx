@@ -18,7 +18,7 @@ export default function Hero() {
         </h1>
         <div className='lg:col-span-4 lg:flex lg:flex-col lg:text-left'>
           <div className='hidden lg:mb-auto lg:block lg:h-1 lg:w-12 lg:bg-raptureBlue' />
-          <p className='text-pretty font-semibold'>
+          <p className='text-pretty font-semibold lg:text-lg'>
             Finding the right people and building high performing teams can be
             hard. Most companies aren’t tapping into the abundance of global
             talent. We’re about to change that.
